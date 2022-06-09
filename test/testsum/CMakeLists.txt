@@ -17,6 +17,7 @@ ADD_EXECUTABLE(testsum ${SRCS})
 enable_testing()
 
 TARGET_LINK_LIBRARIES(testsum
+    gtest_main
     gtest
     gmock
     pthread
