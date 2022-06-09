@@ -1,6 +1,8 @@
 #include<stdio.h>
+#include <iostream>
 #include "sum.h"
 
+using namespace std;
 
 int main(){
 		int i = 2;

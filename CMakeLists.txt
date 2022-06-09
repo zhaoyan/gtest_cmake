@@ -8,12 +8,17 @@ enable_testing()
 
 add_subdirectory(test)
 
+#method1, add automatically.
+file(GLOB sources
+          *.cpp
+          )
 
-set(sources
-   main.cpp
-   sum.cpp)
+#method 2, manually add
+#set(sources
+#   main.cpp
+#   sum.cpp)
+
 add_executable(demo ${sources})
-
 
 target_link_libraries(demo gmock)
 target_link_libraries(demo gtest)
