@@ -8,12 +8,15 @@ else()
     file(GLOB SRCS 
         ../*.cpp
         testsum/*.cpp
-        testsub/*.cpp )
+        testsub/*.cpp 
+        testFoo/*.cpp
+        )
 
     file(GLOB HEADERS
         ../*.h
         testsum/*.h 
-        testsub/*.h)
+        testsub/*.h
+        )
 
     message(STATUS ${SRCS})
 
